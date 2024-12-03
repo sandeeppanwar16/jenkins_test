@@ -24,5 +24,10 @@ pipeline {
                 archiveArtifacts 'api-gateway/target/*.jar'
             }
         }
+        stage('print') {
+            steps {
+                echo "testing"
+            }
+        }
     }
 }
